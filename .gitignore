@@ -1,0 +1,10 @@
+# Pastas e arquivos que devem ser ignorados
+.next/
+node_modules/
+.vscode/
+
+# Service Workers gerados automaticamente (caso sejam reconstruídos via build)
+public/sw.js
+public/sw.js.map
+public/workbox-*.js
+public/workbox-*.js.map

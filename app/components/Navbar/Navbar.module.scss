@@ -1,0 +1,137 @@
+.navbar {
+  background-color: #192230;
+  padding: 1.8rem;
+  text-align: center;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%); // centraliza verticalmente
+  gap: 0.5rem;
+  margin-left: 4rem; // novo
+
+  img {
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    // border: 2px solid #facc15;
+  }
+
+  .empresa {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 1rem;
+    margin-left: 0.4rem;
+  }
+
+  .slogan {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 12px;
+    margin-left: 0.4rem;
+    padding-right: 0.2rem;
+  }
+}
+
+.logoImage {
+  border-radius: 50%;
+  object-fit: cover;
+  // border: 2px solid #facc15;  // contorno amarelo como a fonte
+}
+
+.menuToggle {
+  all: unset; // reseta TODOS os estilos padrão do navegador
+  display: none;
+  font-size: 1.5rem; // ou o tamanho que quiser
+  cursor: pointer;
+  color: white; // cor garantida
+  position: absolute;
+  top: 1.8rem;
+  right: 1rem;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    transition: all 0.3s ease;
+    outline: none;
+  }
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+  transition:
+    max-height 0.5s ease-in-out,
+    padding 0.3s ease-in-out;
+}
+
+.link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.link:hover {
+  color: #ffffff80;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.active {
+  border-bottom: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+/* RESPONSIVO PARA TELAS PEQUENAS */
+@media (max-width: 768px) {
+  .menuToggle {
+    display: block;
+  }
+
+  .navbar {
+    padding: 2.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .logo {
+      margin-left: 0;
+    }
+  }
+
+  .navList {
+    flex-direction: column;
+    background-color: rgba(25, 34, 48, 0.753);
+    backdrop-filter: blur(8px);
+    border-radius: 0 0 8px 8px;
+    position: absolute;
+    margin-top: 1rem;
+    top: 4rem;
+    right: 0;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .open {
+    max-height: 500px;
+    padding: 1rem 0;
+    overflow: hidden;
+  }
+
+  .navList li {
+    margin: 0.1rem 0;
+  }
+}

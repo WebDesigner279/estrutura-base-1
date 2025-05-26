@@ -1,0 +1,39 @@
+:root {
+  --primary-color: #192230;
+  --bg-color: #f9f9f9;
+  --text-color: #222;
+  --font-family: "Segoe UI", sans-serif;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  height: 100%;
+}
+
+/* Garante layout de altura completa */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Deixa o conteúdo crescer e empurrar o Footer */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
