@@ -149,7 +149,7 @@ Este projeto está licenciado sob a [MIT License](LICENSE).
 
 **Valter Vieira Gomes Junior**
 
-- 💼 Desenvolvedor Front-End Júnior
+- 💼 Desenvolvedor Front-End
 - 📧 valtervieira.dev@gmail.com
 - 🌐 [portfolio-valter-dev.vercel.app](https://portfolio-valter-dev.vercel.app)
 - 📱 WhatsApp: (11) 9 7756-7993
