@@ -29,7 +29,7 @@ estrutura-base-1/
 │   │   │   └── index.ts
 │   │   ├── InstallButton/
 │   │   │   ├── InstallButton.tsx
-│   │   │   ├── IntallButton.module.scss
+│   │   │   ├── InstallButton.module.scss
 │   │   │   └── index.tsx
 │   │   ├── Navbar/
 │   │   │   ├── Navbar.module.scss
