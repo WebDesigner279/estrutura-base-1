@@ -27,15 +27,19 @@
     color: #ffffff;
     font-size: 1rem;
     margin-left: 0.4rem;
+    display: flex;
+    flex-direction: column;
   }
 
   .slogan {
+    margin-top: 0.2rem;
     font-family: "Poppins", sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     color: #ffffff;
-    font-size: 12px;
-    margin-left: 0.4rem;
-    padding-right: 0.2rem;
+    font-size: 0.85rem;
+    opacity: 0.9;
+    line-height: 1.3; /* opcional: melhora a leitura em telas pequenas */
+    letter-spacing: 0.3px; /* opcional: deixa o texto um pouco mais leve visualmente */
   }
 }
 

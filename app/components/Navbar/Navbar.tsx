@@ -20,15 +20,17 @@ export default function Navbar() {
       {/* Logo visível apenas em telas maiores e pequenas */}
       <div className={styles.logo}>
         <Image
-          src="/images/letter-l.png"
+          src="/images/logo.png"
           alt="Logo"
           width={50}
           height={50}
           className={styles.logoImage}
         />
         <span className={styles.empresa}>
-          Nome da sua Empresa <br />
-          <span className={styles.slogan}>Slogan da sua empresa aqui...!</span>
+          ATI - Academia Técnica Interna
+          <span className={styles.slogan}>
+            Performance, acessibilidade e UX.
+          </span>
         </span>
       </div>
       <button
