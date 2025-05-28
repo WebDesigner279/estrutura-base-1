@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-        <p>&copy; {currentYear} DevOps. Todos os direitos reservados.</p>
+        <p>&copy; {currentYear} ATI. Todos os direitos reservados.</p>
       </div>
     </footer>
   );
