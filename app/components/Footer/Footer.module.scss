@@ -12,21 +12,5 @@
       margin-bottom: 1rem;
       font-size: 0.9rem;
     }
-
-    .nav {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-
-      a {
-        color: #f0f0f0;
-        text-decoration: none;
-        transition: color 0.3s ease;
-
-        &:hover {
-          color: #00bcd4;
-        }
-      }
-    }
   }
 }
