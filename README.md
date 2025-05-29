@@ -1,16 +1,19 @@
+# 🐾 AuMiau Store – Loja de Pets e Adoção
 
-# 🌐 Estrutura Base - Next.js + TypeScript
+Loja online de pets com informações sobre raças de cães e gatos, além de integração com uma API de adoção de animais reais. Desenvolvido em React com TypeScript, Redux e LocalStorage.
 
-Este projeto é uma estrutura base para aplicações modernas em **Next.js** com **TypeScript**, **SCSS Modules**, suporte a **PWA (Progressive Web App)** e organização de componentes reutilizáveis. Ideal para desenvolvimento ágil, responsivo e escalável.
+---
 
-## ✅ Tecnologias Utilizadas
+## 🚀 Tecnologias Utilizadas
 
-- [Next.js](https://nextjs.org/) 14+
-- [React](https://react.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [SCSS Modules](https://sass-lang.com/)
-- [PWA (Service Worker + Manifest)](https://web.dev/progressive-web-apps/)
-- [ESLint + Prettier](https://prettier.io/)
+- ⚛️ React
+- 🟦 TypeScript
+- 📦 Redux Toolkit
+- 🎨 SCSS Modules
+- 💾 LocalStorage
+- 🐶 [The Dog API](https://thedogapi.com/)
+- 🐱 [The Cat API](https://thecatapi.com/)
+- 🐕‍🦺 [Petfinder API](https://www.petfinder.com/developers/)
 
 ---
 
@@ -64,92 +67,43 @@ estrutura-base-1/
 ├── README.md
 ├── tsconfig.json
 └── .gitignore
-```
+````
 
----
+## 📦 Instalação
 
-## 🚀 Como Executar o Projeto
-
-### 1. Clonar o repositório
+### 1- Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/estrutura-base-1.git
-cd estrutura-base-1
-```
+git clone https://github.com/seu-usuario/petzi.git
+cd petzi
+````
 
-### 2. Instalar as dependências
+### 2- Instale as dependências:
 
 ```bash
 npm install
-# ou
-yarn
-```
+````
 
-### 3. Rodar o servidor de desenvolvimento
+### 3- Crie um arquivo .env com as chaves:
+
+````ini
+VITE_PETFINDER_API_KEY=sua_api_key
+VITE_PETFINDER_SECRET=sua_secret
+````
+### 4- Rode o projeto:
 
 ```bash
 npm run dev
-# ou
-yarn dev
-```
+````
 
-Acesse: [http://localhost:3000](http://localhost:3000)
+## 🧪 Funcionalidades
 
----
+✅ Listagem de raças de cães e gatos com detalhes
 
-## ⚙️ Scripts Disponíveis
+✅ Favoritar pets no LocalStorage
 
-| Comando         | Descrição                            |
-|----------------|----------------------------------------|
-| `dev`          | Inicia o servidor de desenvolvimento   |
-| `build`        | Cria a build de produção               |
-| `start`        | Inicia a aplicação em produção         |
-| `lint`         | Verifica problemas de lint no código   |
-| `format`       | Formata o código com Prettier          |
+✅ Lista de animais reais disponíveis para adoção
 
----
+✅ Layout responsivo e acessível
 
-## 📦 Deploy
-
-Você pode fazer o deploy facilmente na [Vercel](https://vercel.com/) (recomendado). O projeto já está preparado para isso.
-
----
-
-## 📱 Suporte a PWA
-
-- Arquivo `manifest.json` já incluído.
-- Service Worker configurado para permitir instalação como app mobile.
-- Ideal para performance offline e experiência nativa em dispositivos móveis.
-
----
-
-## ✍️ Estilização
-
-- Utiliza SCSS Modules em cada componente para escopo local e organização.
-- Estilo global em `app/styles/globals.scss`.
-
----
-
-## 💡 Boas Práticas
-
-- Estrutura limpa e modular
-- Componentes reutilizáveis
-- SEO-friendly (Next.js)
-- Código formatado com Prettier e checado com ESLint
-
----
-
-## 📄 Licença
-
-Este projeto está licenciado sob a [MIT License](LICENSE).
-
----
-
-## 👨‍💻 Autor
-
-**Valter Vieira Gomes Junior**
-
-- 💼 Desenvolvedor Front-End
-- 📧 valtervieira.dev@gmail.com
-- 🌐 [portfolio-valter-dev.vercel.app](https://portfolio-valter-dev.vercel.app)
-- 📱 WhatsApp: (11) 9 7756-7993
+✅ Filtros por raça, tipo e localização
