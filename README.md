@@ -3,7 +3,7 @@
 > 🚀 Base moderna e escalável para aplicações web com Next.js 14+, SCSS e suporte PWA
 
 <p align="center">
-  <img src="https://i.imgur.com/80Rlu2d.png" alt="Banner Estrutura Base Next.js" style="max-width: 100%; height: auto;" />
+  <img src="https://a.imagem.app/BKaGBQ.png" alt="Banner Estrutura Base Next.js" style="max-width: 100%; height: auto;" />
 </p>
 
 ## 📚 Sumário
