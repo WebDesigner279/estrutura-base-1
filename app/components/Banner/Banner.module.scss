@@ -1,3 +1,14 @@
 .banner{
     width: 100%;
+    position: relative;
+}
+
+.slogan{
+    position: absolute;
+    font-family: var(--font-secundary);
+    color: var(--color-secondary);
+    top: 3rem;
+    left: 20rem;
+    font-size: 3rem;
+
 }

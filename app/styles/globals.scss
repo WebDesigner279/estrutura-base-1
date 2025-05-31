@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
-  --font-family: "Segoe UI", sans-serif;
+  --font-family: "Montserrat", sans-serif;
+  --font-secundary: "Dancing Script", cursive;
   --color-bg: #FFF5E5;
 
   // Cores principais
-  --color-primary: #6CACE4;
-  --color-secondary: #FFD1B3;
+  --color-primary: #9cc3e6;
+  --color-secondary: #5390c6;
   --color-accent: #A8E6CF;
 
   // Fundo e texto

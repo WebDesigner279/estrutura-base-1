@@ -5,6 +5,9 @@ import Footer from "./components/Footer";
 export const metadata = {
   title: "Aplicação em Next.js com SCSS",
   description: "Aplicação em Next.js com SCSS",
+  icons: {
+    icon: "/icons/favicon.ico",
+  },
 };
 
 export default function RootLayout({
@@ -21,14 +24,13 @@ export default function RootLayout({
         <meta name="theme-color" content="#004AAD" />
 
         {/* PWA para iOS */}
-        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-title" content="Aplicação Next.js" />
       </head>
 
       <body>
         <Navbar />
-        
         <main>{children}</main>
         <Footer />
       </body>

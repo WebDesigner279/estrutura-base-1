@@ -46,7 +46,6 @@ export default function Navbar() {
             <IoCartOutline />
           </li>
         </ul>
-
     </nav>
   );
 }
