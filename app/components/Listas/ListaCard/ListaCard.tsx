@@ -1,5 +1,6 @@
 import item from '@/models/Servicos'
-import PetCard from '../../Card/Servicos/PetCard'
+// import PetCard from '../../Card/Servicos/PetCard' 
+import PetCard from '@/components/Card/Servicos/PetCard' // usar @ como padrão de importação
 import style from './ListaCard.module.scss'
 
 export type Props = {
