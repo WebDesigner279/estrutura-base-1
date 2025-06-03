@@ -1,6 +1,48 @@
 # 🐾 AuMiau Store – Loja de Pets e Adoção
 
 Loja online de pets com informações sobre raças de cães e gatos, além de integração com uma API de adoção de animais reais. Desenvolvido em React com TypeScript, Redux e LocalStorage.
+=======
+# 🌐 Estrutura Base - Next.js + TypeScript
+> 🚀 Base moderna e escalável para aplicações web com Next.js 14+, SCSS e suporte PWA
+
+<p align="center">
+  <img src="https://a.imagem.app/BKaHX1.png" alt="Banner Estrutura Base Next.js" style="max-width: 100%; height: auto;" />
+</p>
+
+## 📚 Sumário
+
+- [✨ Funcionalidades](#-funcionalidades)
+- [✅ Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [📁 Estrutura de Pastas](#-estrutura-de-pastas)
+- [🚀 Como Executar o Projeto](#-como-executar-o-projeto)
+- [⚙️ Scripts Disponíveis](#️-scripts-disponíveis)
+- [📦 Deploy](#-deploy)
+- [📱 Suporte a PWA](#-suporte-a-pwa)
+- [✍️ Estilização](#️-estilização)
+- [💡 Boas Práticas](#-boas-práticas)
+- [📄 Licença](#-licença)
+- [👨‍💻 Autor](#-autor)
+
+
+![Next.js](https://img.shields.io/badge/Next.js-14+-black?logo=nextdotjs)
+![TypeScript](https://img.shields.io/badge/TypeScript-4.x-blue?logo=typescript)
+![SCSS Modules](https://img.shields.io/badge/SCSS-Modules-pink?logo=sass)
+![PWA Ready](https://img.shields.io/badge/PWA-Ready-green?logo=googlechrome)
+![Template ATI](https://img.shields.io/badge/Template-ATI-blueviolet?style=flat-square)
+![MIT License](https://img.shields.io/badge/license-MIT-brightgreen)
+
+
+> 🧱 **Este repositório é um Template Padrão ATI — Academia Técnica Interna.**  
+> Use o botão `Use this template` no GitHub para iniciar seu projeto com esta estrutura base!
+
+## ✨ Funcionalidades
+
+- Estrutura otimizada com Next.js 14+
+- Suporte completo a PWA e instalação como app mobile
+- Componentes modulares com SCSS isolado
+- Layout responsivo pronto para produção
+- SEO configurado nativamente
+- Deploy fácil via Vercel
 
 ---
 
