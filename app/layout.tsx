@@ -1,6 +1,7 @@
 import "./styles/globals.scss";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Providers from "./provider";
 
 export const metadata = {
   title: "Aplicação em Next.js com SCSS",
@@ -30,9 +31,11 @@ export default function RootLayout({
       </head>
 
       <body>
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
+        <Providers>
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

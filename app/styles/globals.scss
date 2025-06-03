@@ -3,7 +3,7 @@
 :root {
   --font-family: "Montserrat", sans-serif;
   --font-secundary: "Dancing Script", cursive;
-  --color-bg: #FFF5E5;
+  --color-bg: #f7f5f2;
 
   // Cores principais
   --color-primary: #9cc3e6;
@@ -57,4 +57,24 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.lista{
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  padding: 0;
+}
+
+.container {
+  padding: 0;
+  padding: 0.5rem 4rem;
+}
+
+.tituloPrincipal{
+  font-family: var(--font-secundary);
+  color: var(--color-secondary);
+  font-size: var(--font-size-lg);
+  text-align: center;
 }

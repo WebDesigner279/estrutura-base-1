@@ -1,55 +1,48 @@
-import PetCard from "@/components/Card/PetCard";
 import styles from "./Home.module.scss";
 
 import Banner from "@components/Banner";
 import Servico from "@/models/Servicos";
-import Listas from "@/components/ListaCard/ListaCard";
+import Listas from "@/components/Listas/ListaCard/ListaCard";
 
 const servicos: Servico[] = [
   {
-    imagem:'/images/racoes.jpg',
+    imagem:'/images/adocao.jpg',
     titulo:'Adoção de Pets',
-    paragrafo:'Nutrição e sabor para alegrar o dia do seu pet!',
+    paragrafo:'Encontre seu amigo mais próximo.',
     id:1
   },
   {
-    imagem:'/images/adestramento.jpg',
-    titulo:'Adestramento',
-    paragrafo:'Nutrição e sabor para alegrar o dia do seu pet!',
+    imagem:'/images/produtos.jpg',
+    titulo:'Produtos',
+    paragrafo:'Produtos para pets (ração, brinquedos, acessórios).',
     id:2
   },
   {
-    imagem:'/images/racoes.jpg',
-    titulo:'Adoção de Pets',
-    paragrafo:'Nutrição e sabor para alegrar o dia do seu pet!',
+    imagem:'/images/adestramento.jpg',
+    titulo:'Raças',
+    paragrafo:'Informações e curiosidades sobre raças de cães e gatos.',
     id:3
   },
   {
-    imagem:'/images/racoes.jpg',
-    titulo:'Adoção de Pets',
-    paragrafo:'Nutrição e sabor para alegrar o dia do seu pet!',
+    imagem:'/images/favoritos.jpg',
+    titulo:'Favoritos',
+    paragrafo:'Lista dos pets e produtos que o você favoritou.',
     id:4
   },
   {
-    imagem:'/images/racoes.jpg',
-    titulo:'Adoção de Pets',
-    paragrafo:'Nutrição e sabor para alegrar o dia do seu pet!',
+    imagem:'/images/sobre.jpg',
+    titulo:'Sobre Nós',
+    paragrafo:'Informações sobre a loja, equipe e compromisso com a causa animal.',
     id:5
   },
-  {
-    imagem:'/images/racoes.jpg',
-    titulo:'Adoção de Pets',
-    paragrafo:'Nutrição e sabor para alegrar o dia do seu pet!',
-    id:6
-  }
 ]
 
 export default function Home() {
 	return (
     <>
       <Banner />
-      <section className={styles.home}>
-        <h2 className={styles.titulo}>Nossos serviços</h2>
+      <section className="container">
+        <h2 className="tituloPrincipal">Nossos serviços</h2>
         <p className={styles.paragrafo}>
           Oferecemos uma ampla gama de produtos e serviços para animais de
           estimação, como alimentos, brinquedos, produtos de higiene e

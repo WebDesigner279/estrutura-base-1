@@ -1,4 +1,6 @@
 "use client";
+import Link from "next/link";
+
 import { IoCartOutline  } from "react-icons/io5";
 import { IoIosSearch } from "react-icons/io";
 
@@ -25,7 +27,7 @@ export default function Navbar() {
             <a href="#">Adoção</a> 
           </li>
           <li className={styles.listaItem}> 
-            <a href="#">Raças</a> 
+          <Link href="/infoRacas">Racas</Link>
           </li>
           <li className={styles.listaItem}> 
             <a href="#">Favoritos</a> 
