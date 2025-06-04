@@ -16,6 +16,11 @@ const nextConfig = {
         destination: "/home",
         permanent: true,
       },
+      {
+        source: "/info",
+        destination: "/InfoRacas",
+        permanent: true,
+      }
     ];
   },
 };
