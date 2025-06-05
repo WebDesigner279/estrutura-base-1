@@ -17,7 +17,12 @@ Sempre que concluir uma pequena parte da tarefa, antes de enviar para o GitHub.
 ```bash
 git add .
 git commit -m "Ajusta layout da página de produtos"
+```
+
+---
+
 🔵 2. git pull — Atualizando seu Projeto com Alterações do Time
+
 O que é?
 O git pull traz as últimas alterações do repositório remoto (GitHub) para o seu código local.
 
@@ -26,11 +31,16 @@ Antes de começar a trabalhar ou antes de fazer merge com a branch main.
 
 Exemplo:
 
-bash
+```bash
 Copiar
 Editar
 git pull origin main
+```
+
+---
+
 🟢 3. Pull Request (PR) — Solicitando Revisão e Mesclagem
+
 O que é?
 Um Pull Request é uma solicitação de revisão de código feita diretamente no GitHub. Ele propõe que as mudanças da sua branch sejam mescladas com a main.
 
@@ -41,13 +51,17 @@ Etapas:
 
 Suba sua branch:
 
-bash
+```bash
 Copiar
 Editar
 git push origin nome-da-sua-branch
 No GitHub, vá até a aba Pull Requests e clique em "New pull request".
+```
+
+---
 
 🟣 4. Compare & Pull Request — Criando um PR no GitHub
+
 O que é?
 É a interface do GitHub que aparece após o push, permitindo comparar sua branch com a main e abrir um Pull Request.
 
@@ -62,6 +76,7 @@ Escrever uma descrição clara da alteração
 Solicitar a revisão de Eduarda ou Valter
 
 🔴 5. Merge — Unindo Branches Após Revisão
+
 O que é?
 Merge significa juntar o código da sua branch com outra (geralmente a main), incorporando todas as mudanças.
 
