@@ -5,17 +5,30 @@ export const dogApi = createApi({
     baseQuery: fetchBaseQuery({ 
         baseUrl:"https://api.thedogapi.com/v1",
         prepareHeaders: (headers) => {
-            headers.set(
-                "x-api-key",
-                "live_ LcsCe2SQjmANrwAXBvqQpbw1Z9upTQ y3FmgW7dBcjlAjqo0lW378lJPI0TpE RWsg"
-            );
+            const apiKey = process.env.NEXT_PUBLIC_DOG_API_KEY
+
+            if(!apiKey){
+                throw new Error("A chave da API está faltando em .env.local")
+            }
+
+            headers.set("x-api-key", apiKey);
             return headers
         }
     }),
     endpoints: (build) => ({
-        getRacas: build.query<any[], void>({
-            query: () => ({
-                url: "/breeds?limit=10&page=0",
+        getRacas: build.query<any[],  { page: number; limit: number }>({
+            query: ({ page, limit }) => ({
+                url: "/breeds",
+                params: {
+                    language: "pt-BR",
+                    page,
+                    limit
+                },
+            }),
+        }),
+        getImagesById: build.query<any, string>({
+            query: (imageId) => ({
+                url: `/images/${imageId}`,
                 params: {
                     language: "pt-BR",
                     page: 0,
@@ -26,4 +39,6 @@ export const dogApi = createApi({
     }),
 });
 
-export const { useGetRacasQuery } = dogApi
+
+
+export const { useGetRacasQuery, useGetImagesByIdQuery } = dogApi

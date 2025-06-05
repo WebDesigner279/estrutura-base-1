@@ -1,0 +1,22 @@
+.sobre {
+  padding: 2rem;
+  background-color: #f5f5f5;
+}
+.sobre .container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+.sobre .container h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+.sobre .container p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}/*# sourceMappingURL=Sobre.module.css.map */

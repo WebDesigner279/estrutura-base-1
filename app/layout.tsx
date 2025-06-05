@@ -1,7 +1,8 @@
+import Providers from "./provider";
+
 import "./styles/globals.scss";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Providers from "./provider";
 
 export const metadata = {
   title: "Aplicação em Next.js com SCSS",

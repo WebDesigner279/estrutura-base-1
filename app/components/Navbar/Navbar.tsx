@@ -3,7 +3,6 @@ import Link from "next/link";
 
 import { IoCartOutline  } from "react-icons/io5";
 import { IoIosSearch } from "react-icons/io";
-
 import styles from "./Navbar.module.scss";
 
 export default function Navbar() {

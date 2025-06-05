@@ -18,7 +18,7 @@ export default function PetCard({
                     <h3 className={styles.titulo}>{titulo}</h3>
                     <p>{paragrafo}</p>
                 </div>
-                <button className={styles.botao}>Ver mais</button>
+                <button className="botao">Ver mais</button>
             </li>
 	);
 }

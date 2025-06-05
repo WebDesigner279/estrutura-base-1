@@ -1,8 +1,8 @@
 import styles from "./Home.module.scss";
 
-import Banner from "@components/Banner";
 import Servico from "@/models/Servicos";
-import Listas from "@/components/Listas/ListaCard/ListaCard";
+import Banner from "@components/Banner";
+import Listas from "@/components/Listas/ListaCard";
 
 const servicos: Servico[] = [
   {

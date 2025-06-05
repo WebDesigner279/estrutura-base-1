@@ -1,4 +1,4 @@
-import ListasRacas from "@/components/Listas/ListaRacas/ListaRacas";
+import ListasRacas from "@/components/Listas/ListaRacas";
 
 export default function InfoRacas() {
 	return (
