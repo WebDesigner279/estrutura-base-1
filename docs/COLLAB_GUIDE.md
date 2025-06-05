@@ -90,8 +90,6 @@ Após o Pull Request ser aprovado.
 🧩 Resumo Visual: Fluxo Simplificado
 
 ```plaintext
-Copiar
-Editar
 git checkout -b valter-produtos      ← Crie sua branch
 git add . && git commit -m "..."     ← Faça commits locais
 git pull origin main                 ← Traga alterações da main
