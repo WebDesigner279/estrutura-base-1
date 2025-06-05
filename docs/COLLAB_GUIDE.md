@@ -67,13 +67,13 @@ O que é?
 
 O que fazer nessa tela?
 
-Escolher sua branch (ex: valter-produtos)
+- Escolher sua branch (ex: valter-produtos)
 
-Verificar a comparação com a branch main
+- Verificar a comparação com a branch main
 
-Escrever uma descrição clara da alteração
+- Escrever uma descrição clara da alteração
 
-Solicitar a revisão de Eduarda ou Valter
+- Solicitar a revisão de Eduarda ou Valter
 
 🔴 5. Merge — Unindo Branches Após Revisão
 
@@ -85,12 +85,13 @@ Após o Pull Request ser aprovado.
 
 Como fazer no GitHub?
 
-Dentro do Pull Request, clique em "Merge pull request"
+1. Dentro do Pull Request, clique em "Merge pull request"
 
-Em seguida, clique em "Confirm merge"
+2. Em seguida, clique em "Confirm merge"
 
 🧩 Resumo Visual: Fluxo Simplificado
-plaintext
+
+```plaintext
 Copiar
 Editar
 git checkout -b valter-produtos      ← Crie sua branch
@@ -100,13 +101,13 @@ git push origin valter-produtos      ← Envie para o GitHub
 Compare & Pull Request (no GitHub)   ← Crie o PR
 Revisão e Merge                      ← Após aprovação, mescle
 git checkout main && git pull        ← Atualize sua main local
+```
+
 📌 Dica Final: Um Commit ≠ Um Push
-commit = salva localmente
 
-push = envia para o GitHub
+- commit = salva localmente
 
-pull = recebe do GitHub
+- push = envia para o GitHub
 
-nginx
-Copiar
-Editar
+- pull = recebe do GitHub
+
