@@ -16,6 +16,7 @@ export interface Raca {
 
 export default function ListasRacas( ) {
     const {data: racas, isLoading, error} = useGetRacasQuery();
+    console.log(racas)
 
     if(isLoading) return <h2>Buscando informações...</h2>
     if(error) return <p>Erro ao carregar as informações!</p>
