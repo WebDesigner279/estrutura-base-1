@@ -29,19 +29,3 @@
     font-size: var(--font-size-base);
     margin: 0;
 }
-
-.botao{
-    padding: 0.5rem 2rem;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-    background-color: var(--color-secondary);
-    color: var(--color-white);
-    font-weight: bold;
-    font-size: var(--font-size-base);
-    border-color: var(--color-primary);
-    cursor: pointer;
-
-    &:hover{
-        text-decoration: underline;
-    }
-}

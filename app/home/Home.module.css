@@ -1,0 +1,10 @@
+.home {
+  padding: 0;
+  padding: 0.5rem 4rem;
+}
+
+.paragrafo {
+  margin-bottom: 4rem;
+  text-align: center;
+  color: var(--color-text-secondary);
+}/*# sourceMappingURL=Home.module.css.map */

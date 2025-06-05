@@ -1,0 +1,16 @@
+.divBotao {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+  gap: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.gif-loading {
+  width: 150px;
+  margin: 0 auto;
+  display: block;
+}/*# sourceMappingURL=ListaRacas.module.css.map */
