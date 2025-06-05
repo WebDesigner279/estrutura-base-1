@@ -40,7 +40,8 @@ git pull origin main
 🟢 3. Pull Request (PR) — Solicitando Revisão e Mesclagem
 
 **O que é?**  
-Um Pull Request é uma solicitação de revisão de código feita diretamente no GitHub. Ele propõe que as mudanças da sua branch sejam mescladas com a main.
+Um Pull Request é uma solicitação de revisão de código feita diretamente no GitHub.  
+Ele propõe que as mudanças da sua branch sejam mescladas com a main.
 
 **Quando usar?**  
 Após terminar sua tarefa e enviar para o GitHub.
@@ -78,7 +79,7 @@ No GitHub, vá até a aba Pull Requests e clique em "New pull request".
 Merge significa juntar o código da sua branch com outra (geralmente a main), incorporando todas as mudanças.
 
 **Quando usar?**  
-Após o Pull Request ser aprovado.
+- Após o Pull Request ser aprovado.
 
 **Como fazer no GitHub?**  
 1. Dentro do Pull Request, clique em "Merge pull request"
