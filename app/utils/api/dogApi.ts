@@ -13,9 +13,19 @@ export const dogApi = createApi({
         }
     }),
     endpoints: (build) => ({
-        getRacas: build.query<any[], void>({
-            query: () => ({
-                url: "/breeds?limit=10&page=0",
+        getRacas: build.query<any[],  { page: number; limit: number }>({
+            query: ({ page, limit }) => ({
+                url: "/breeds",
+                params: {
+                    language: "pt-BR",
+                    page,
+                    limit
+                },
+            }),
+        }),
+        getImagesById: build.query<any, string>({
+            query: (imageId) => ({
+                url: `/images/${imageId}`,
                 params: {
                     language: "pt-BR",
                     page: 0,
@@ -26,4 +36,4 @@ export const dogApi = createApi({
     }),
 });
 
-export const { useGetRacasQuery } = dogApi
+export const { useGetRacasQuery, useGetImagesByIdQuery } = dogApi

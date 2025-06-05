@@ -1,5 +1,5 @@
 import item from '@/models/Servicos'
-import PetCard from '../../Card/Servicos/PetCard'
+import PetCard from '../../Card/Servicos'
 import style from './ListaCard.module.scss'
 
 export type Props = {
