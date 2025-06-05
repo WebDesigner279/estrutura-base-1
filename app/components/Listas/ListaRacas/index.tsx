@@ -1,7 +1,7 @@
 "use client"
 
 import { useGetRacasQuery }  from "@/utils/api/dogApi";
-import RacaCard from "@/components/Card/Racas/RacaCard";
+import RacaCard from "@/components/Card/Racas";
 
 export interface Raca {
     id:number;

@@ -5,10 +5,13 @@ export const dogApi = createApi({
     baseQuery: fetchBaseQuery({ 
         baseUrl:"https://api.thedogapi.com/v1",
         prepareHeaders: (headers) => {
-            headers.set(
-                "x-api-key",
-                "live_ LcsCe2SQjmANrwAXBvqQpbw1Z9upTQ y3FmgW7dBcjlAjqo0lW378lJPI0TpE RWsg"
-            );
+            const apiKey = process.env.NEXT_PUBLIC_DOG_API_KEY
+
+            if(!apiKey){
+                throw new Error("A chave da API está faltando em .env.local")
+            }
+
+            headers.set("x-api-key", apiKey);
             return headers
         }
     }),

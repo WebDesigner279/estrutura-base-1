@@ -18,7 +18,8 @@
     "paths": {
       "@/*": ["./app/*"],
       "@components/*":["app/components/*"],
-      "@models/*":["app/models/*"]
+      "@models/*":["app/models/*"],
+      "@Card/*":["app/components/Card/*"]
     },
     "plugins": [
       {
