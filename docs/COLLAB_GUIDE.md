@@ -32,8 +32,6 @@ Antes de começar a trabalhar ou antes de fazer merge com a branch main.
 Exemplo:
 
 ```bash
-Copiar
-Editar
 git pull origin main
 ```
 
