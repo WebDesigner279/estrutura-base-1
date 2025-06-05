@@ -1,8 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
-  --primary-color: #192230;
-  --bg-color: #f9f9f9;
-  --text-color: #222;
-  --font-family: "Segoe UI", sans-serif;
+  --font-family: "Montserrat", sans-serif;
+  --font-secundary: "Dancing Script", cursive;
+  --color-bg: #f7f5f2;
+
+  // Cores principais
+  --color-primary: #9cc3e6;
+  --color-secondary: #5390c6;
+  --color-accent: #A8E6CF;
+
+  // Fundo e texto
+  --color-white: #FDFDFD;
+  --color-text: #333333;
+  --color-text-secondary: #666666;
+
+  // Estados
+  --color-error: #FF6B6B;
+  --color-favorite: #FFC0CB;
+
+  // Tamanhos de fonte
+  --font-size-sm: 0.875rem;  // 14px
+  --font-size-base: 1rem;    // 16px
+  --font-size-lg: 2rem;   // 32px
 }
 
 html,
@@ -10,7 +30,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: var(--font-family);
-  background-color: var(--bg-color);
+  background-color: var(--color-bg);
   color: var(--text-color);
   height: 100%;
 }
@@ -20,6 +40,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  font-size: var(--font-size-base)
 }
 
 /* Deixa o conteúdo crescer e empurrar o Footer */
@@ -36,4 +57,24 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.lista{
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  padding: 0;
+}
+
+.container {
+  padding: 0;
+  padding: 0.5rem 4rem;
+}
+
+.tituloPrincipal{
+  font-family: var(--font-secundary);
+  color: var(--color-secondary);
+  font-size: var(--font-size-lg);
+  text-align: center;
 }

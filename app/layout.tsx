@@ -1,6 +1,7 @@
 import "./styles/globals.scss";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Providers from "./provider";
 
 export const metadata = {
   title: "Aplicação em Next.js com SCSS",
@@ -24,17 +25,17 @@ export default function RootLayout({
         <meta name="theme-color" content="#004AAD" />
 
         {/* PWA para iOS */}
-        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-title" content="Aplicação Next.js" />
-        <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
-        <link rel="apple-touch-icon" href="/icons/icon-512x512.png" />
       </head>
 
       <body>
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
+        <Providers>
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

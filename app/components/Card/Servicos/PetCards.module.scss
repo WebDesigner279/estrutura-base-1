@@ -1,0 +1,47 @@
+.imagens{
+    width: 320px;
+    height: 200px;
+    border-radius: 8px  8px 0 0;
+}
+
+.listaItem{
+    width: 320px;
+    margin-bottom: 3rem;
+    border: 1px solid rgb(189, 188, 188);
+    border-radius: 8px;
+    text-align: center;
+    background-color: var(--color-white);
+
+}
+
+.listaTexto{
+    padding: 1rem;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+
+.titulo{
+    font-weight: bold;
+    color: var(--color-secondary);
+    font-size: var(--font-size-base);
+    margin: 0;
+}
+
+.botao{
+    padding: 0.5rem 2rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    font-weight: bold;
+    font-size: var(--font-size-base);
+    border-color: var(--color-primary);
+    cursor: pointer;
+
+    &:hover{
+        text-decoration: underline;
+    }
+}

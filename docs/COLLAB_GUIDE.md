@@ -109,4 +109,3 @@ git checkout main && git pull        ← Atualize sua main local
 - push = envia para o GitHub
 
 - pull = recebe do GitHub
-
