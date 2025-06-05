@@ -24,6 +24,7 @@ git commit -m "Ajusta layout da página de produtos"
 🔵 2. git pull — Atualizando seu Projeto com Alterações do Time
 
 O que é?
+
 O git pull traz as últimas alterações do repositório remoto (GitHub) para o seu código local.
 
 Quando usar?
@@ -42,9 +43,11 @@ git pull origin main
 🟢 3. Pull Request (PR) — Solicitando Revisão e Mesclagem
 
 O que é?
+
 Um Pull Request é uma solicitação de revisão de código feita diretamente no GitHub. Ele propõe que as mudanças da sua branch sejam mescladas com a main.
 
 Quando usar?
+
 Após terminar sua tarefa e enviar para o GitHub.
 
 Etapas:
@@ -63,6 +66,7 @@ No GitHub, vá até a aba Pull Requests e clique em "New pull request".
 🟣 4. Compare & Pull Request — Criando um PR no GitHub
 
 O que é?
+
 É a interface do GitHub que aparece após o push, permitindo comparar sua branch com a main e abrir um Pull Request.
 
 O que fazer nessa tela?
@@ -75,12 +79,16 @@ O que fazer nessa tela?
 
 - Solicitar a revisão de Eduarda ou Valter
 
+---
+
 🔴 5. Merge — Unindo Branches Após Revisão
 
 O que é?
+
 Merge significa juntar o código da sua branch com outra (geralmente a main), incorporando todas as mudanças.
 
 Quando usar?
+
 Após o Pull Request ser aprovado.
 
 Como fazer no GitHub?
@@ -88,6 +96,8 @@ Como fazer no GitHub?
 1. Dentro do Pull Request, clique em "Merge pull request"
 
 2. Em seguida, clique em "Confirm merge"
+
+---
 
 🧩 Resumo Visual: Fluxo Simplificado
 
@@ -102,6 +112,8 @@ Compare & Pull Request (no GitHub)   ← Crie o PR
 Revisão e Merge                      ← Após aprovação, mescle
 git checkout main && git pull        ← Atualize sua main local
 ```
+
+---
 
 📌 Dica Final: Um Commit ≠ Um Push
 
