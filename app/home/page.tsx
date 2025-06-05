@@ -1,4 +1,6 @@
-import styles from "./Home.module.scss";
+// import styles from "./Home.module.scss";
+import styles from "@/home/Home.module.scss";
+
 
 import Banner from "@components/Banner";
 import Servico from "@/models/Servicos";
