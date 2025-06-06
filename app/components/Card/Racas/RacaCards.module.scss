@@ -39,3 +39,16 @@
 .listaDescricaoItem{
     margin-top: 8px;
 }
+
+.div{
+    display: flex;
+    justify-content: space-between;
+
+} 
+
+.botao{
+    background-color: transparent;
+    border:none;
+    width: auto;
+    cursor: pointer;
+}

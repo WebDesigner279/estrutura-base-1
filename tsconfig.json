@@ -19,6 +19,7 @@
       "@/*": ["./app/*"],
       "@components/*":["app/components/*"],
       "@models/*":["app/models/*"],
+      "@store/":["app/store/*"]
     },
     "plugins": [
       {
