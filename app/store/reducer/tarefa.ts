@@ -13,7 +13,7 @@ const tarefaSlice = createSlice({
     name:'tarefa',
     initialState,
     reducers: {
-        setRacas:(state, action: PayloadAction<Raca[]>) =>{
+        carregaRacas:(state, action: PayloadAction<Raca[]>) =>{
             state.dog = action.payload
         },
         favoritar: (
@@ -31,6 +31,6 @@ const tarefaSlice = createSlice({
     }
 })
 
-export const { favoritar, setRacas } = tarefaSlice.actions
+export const { favoritar, carregaRacas } = tarefaSlice.actions
 
 export default tarefaSlice.reducer

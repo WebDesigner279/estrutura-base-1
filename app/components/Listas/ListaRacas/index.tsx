@@ -1,55 +1,61 @@
 "use client"
 import { useEffect, useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 import { useGetRacasQuery }  from "@/utils/api/dogApi";
-import { setRacas } from "@store/reducer/tarefa";
+import { carregaRacas } from "@store/reducer/tarefa";
 import RacaCard from "@components/Card/Racas";
 import style from "./ListaRacas.module.scss";
+import { RootReducer } from "@/store";
 
 export default function ListasRacas( ) {   
-    const dispatch = useDispatch();
-    const [listaRacas, setListaRacas] = useState<any[]>([])
-    const [page, setPage] = useState(0);
+    const [listaRacas, setListaRacas] = useState<any[]>([]);
     const limit = 9;
+    const [page, setPage] = useState(0);
     const {data: racas, isLoading, error, isFetching} = useGetRacasQuery( { page, limit });
+    const dispatch = useDispatch();
+    const racaComStatus = useSelector((state: RootReducer) => state.tarefa.dog)
 
     useEffect(() => {
         if(racas) {
-            setListaRacas(prev => [...prev, ...racas])
-
-            const raçasComFavorito = racas.map((r) => ({
-                id: r.id,
-                nome: r.name,
-                imagem: r.reference_image_id,
-                original: r.origin,
-                tamanho: r.height.metric,
-                temperamento: r.temperament,
-                vida_util: r.life_span,
-                favorito: false
-              }));
-          
-              dispatch(setRacas(raçasComFavorito));
-            }
-    }, [racas])
-        
+            dispatch(carregaRacas(racas))
+            // setListaRacas(prev => [...prev, ...racas])  
+        }
+    }, [dispatch, racas])
+    if (isLoading) return <h2>Buscando informações...</h2>
+    if (error) return <p>Erro ao carregar as informações!</p>
 
     const proximaPage = () => {
         setPage(prev => prev + 1);
     }
-
     const voltaPage = () => {
         setPage(prev => prev - 1);
     }
 
+    const filtrarTarefas = () => {
+        if (!racas) return []
+
+        const racasCombinadas = racas.map((raca) => {
+            const encontrado = racaComStatus.find((r) => r.id === raca.id)
+
+            return{
+                ...raca,
+                favorito: encontrado?.favorito || false
+            }
+        });
+        const filtrados = racasCombinadas
+        return filtrados
+    }
+
+    const racasFiltradas = filtrarTarefas()
+    
 
     return(
-        <>
-        
-            {listaRacas.length === 0 && isLoading && <h2>Buscando informações...</h2>}
-            {error && <p>Erro ao carregar as informações!</p>}
-            <ul className="lista">
-                {racas?.map((raca) => {
+        <ul className="lista">
+            {racasFiltradas?.length === 0 ? (
+                <p>Lista vazia.</p>
+            ) : (racasFiltradas?.map((raca) => {
+                console.log(racasFiltradas)
                     return(
                         <RacaCard 
                         key={raca.id}
@@ -60,11 +66,11 @@ export default function ListasRacas( ) {
                         tamanho={raca.height.metric}
                         temperamento={raca.temperament}
                         vida_util={raca.life_span}
-                        favorito= {true}
+                        favorito= {raca.favorito}
                         />
                     )
-                })}
-            </ul>  
+                })  
+            )}
             <div className={`${isLoading ? style.hidden : style.divBotao}`}>
                 <button className={`${page === 0 ? style.hidden : 'botao'}`} onClick={voltaPage} disabled={isFetching}>
                     {isFetching ? "Carregando..." : "Voltar"}
@@ -74,6 +80,7 @@ export default function ListasRacas( ) {
                 </button>
            
             </div>
-        </>
+            
+        </ul>
     )
 }

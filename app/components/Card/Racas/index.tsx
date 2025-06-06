@@ -23,7 +23,8 @@ export default function RacaCard({
     original,
     temperamento,
     vida_util,
-    tamanho
+    tamanho,
+    favorito
 } : Raca) {
     const dispatch = useDispatch();
     const { data, isLoading } = useGetImagesByIdQuery(imagem)
