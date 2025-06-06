@@ -23,11 +23,9 @@ const tarefaSlice = createSlice({
             const indexDaTarefa = state.dog.findIndex(
                 (f) => f.id === action.payload.id
             )     
-            console.log(action.payload.favorito)
 
             if(indexDaTarefa >= 0){
                 state.dog[indexDaTarefa].favorito = action.payload.favorito 
-                console.log(action.payload.favorito)
             }
         }
     }

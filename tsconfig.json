@@ -17,9 +17,11 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./app/*"],
-      "@components/*":["app/components/*"],
-      "@models/*":["app/models/*"],
-      "@store/":["app/store/*"]
+      "@components/*": ["app/components/*"],
+      "@styles/*": ["app/styles/*"],
+      "@home/*": ["app/home/*"],
+      "@sobre/*": ["app/sobre/*"],
+      "@contato/*": ["app/contato/*"],
     },
     "plugins": [
       {

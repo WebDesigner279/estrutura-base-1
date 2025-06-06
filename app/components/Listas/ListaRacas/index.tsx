@@ -3,16 +3,16 @@ import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 
 import { useGetRacasQuery }  from "@/utils/api/dogApi";
-import RacaCard from "@components/Card/Racas";
-import style from './ListaRacas.module.scss'
 import { setRacas } from "@/store/reducer/tarefa";
+import RacaCard from "@components/Card/Racas";
+import style from "./ListaRacas.module.scss";
 
 export default function ListasRacas( ) {   
+    const dispatch = useDispatch();
     const [listaRacas, setListaRacas] = useState<any[]>([])
     const [page, setPage] = useState(0);
     const limit = 9;
     const {data: racas, isLoading, error, isFetching} = useGetRacasQuery( { page, limit });
-    const dispatch = useDispatch();
 
     useEffect(() => {
         if(racas) {
@@ -30,8 +30,9 @@ export default function ListasRacas( ) {
               }));
           
               dispatch(setRacas(raçasComFavorito));
-        }
+            }
     }, [racas])
+        
 
     const proximaPage = () => {
         setPage(prev => prev + 1);

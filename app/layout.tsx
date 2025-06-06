@@ -1,6 +1,6 @@
 import "./styles/globals.scss";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Navbar from "@components/Navbar";
+import Footer from "@components/Footer";
 import Providers from "./provider";
 
 export const metadata = {
