@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 
 import { useGetImagesByIdQuery } from "@/utils/api/dogApi";
 import styles from "./RacaCards.module.scss";
-import { RootReducer } from "@/store";
+import { RootReducer } from "@store/index";
 import { favoritar } from "@/store/reducer/tarefa";
 
 export interface Raca {

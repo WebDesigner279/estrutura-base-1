@@ -22,6 +22,7 @@
       "@home/*": ["app/home/*"],
       "@sobre/*": ["app/sobre/*"],
       "@contato/*": ["app/contato/*"],
+      "@store/*": ["app/store/*"]
     },
     "plugins": [
       {

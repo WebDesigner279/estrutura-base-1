@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 
 import { useGetRacasQuery }  from "@/utils/api/dogApi";
-import { setRacas } from "@/store/reducer/tarefa";
+import { setRacas } from "@store/reducer/tarefa";
 import RacaCard from "@components/Card/Racas";
 import style from "./ListaRacas.module.scss";
 
