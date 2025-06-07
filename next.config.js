@@ -20,7 +20,7 @@ const nextConfig = {
         source: "/info",
         destination: "/InfoRacas",
         permanent: true,
-      }
+      },
     ];
   },
 };

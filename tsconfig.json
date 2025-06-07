@@ -17,9 +17,9 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./app/*"],
-      "@components/*":["app/components/*"],
-      "@models/*":["app/models/*"],
-      "@Card/*":["app/components/Card/*"]
+      "@components/*": ["app/components/*"],
+      "@models/*": ["app/models/*"],
+      "@Card/*": ["app/components/Card/*"]
     },
     "plugins": [
       {

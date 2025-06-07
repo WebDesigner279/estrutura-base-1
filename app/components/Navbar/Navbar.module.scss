@@ -7,16 +7,16 @@
   justify-content: space-around;
 }
 
-.titulo{
-  margin:0;
+.titulo {
+  margin: 0;
   font-size: var(--font-size-lg);
 }
 
-.span{
+.span {
   font-size: var(--font-size-sm);
 }
 
-.lista{
+.lista {
   list-style-type: none;
   display: flex;
   align-items: center;
@@ -24,11 +24,11 @@
   margin: 0;
 }
 
-.listaItem :hover{
+.listaItem :hover {
   text-decoration: underline;
   font-weight: bold;
 }
 
-.navIcon{
+.navIcon {
   font-size: var(--font-size-lg);
 }

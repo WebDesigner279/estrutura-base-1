@@ -6,12 +6,12 @@
   --color-bg: #f7f5f2;
   --color-primary: #9cc3e6;
   --color-secondary: #5390c6;
-  --color-accent: #A8E6CF;
-  --color-white: #FDFDFD;
+  --color-accent: #a8e6cf;
+  --color-white: #fdfdfd;
   --color-text: #333333;
   --color-text-secondary: #666666;
-  --color-error: #FF6B6B;
-  --color-favorite: #FFC0CB;
+  --color-error: #ff6b6b;
+  --color-favorite: #ffc0cb;
   --font-size-sm: 0.875rem;
   --font-size-base: 1rem;
   --font-size-lg: 2rem;
@@ -85,4 +85,4 @@ a {
 }
 .botao:hover {
   text-decoration: underline;
-}/*# sourceMappingURL=globals.css.map */
+} /*# sourceMappingURL=globals.css.map */
