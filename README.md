@@ -54,9 +54,6 @@ Loja online de pets com informações sobre raças de cães e gatos, além de in
 - 🎨 SCSS Modules
 - 💾 LocalStorage
 - 🐶 [The Dog API](https://thedogapi.com/)
-- 🐱 [The Cat API](https://thecatapi.com/)
-- 🐕‍🦺 [Petfinder API](https://www.petfinder.com/developers/)
-
 ---
 
 ## 📁 Estrutura de Pastas
@@ -68,39 +65,68 @@ estrutura-base-1/
 ├── .vscode/                              # Configurações do VSCode (opcional)
 ├── app/
 │   ├── components/                       # Componentes reutilizáveis
+│   │   ├── Banner/
+│   │   │   ├── Banner.module.scss
+│   │   │   ├── Banner.tsx
+│   │   │   └── index.ts
+│   │   ├── Card/
+│   │   │   ├── index.ts
+│   │   │   ├── PetCard.module.scss
+│   │   │   ├── PetCard.tsx
+│   │   │   ├── RacaCard.module.scss
+│   │   │   └── RacaCard.tsx
 │   │   ├── Footer/
 │   │   │   ├── Footer.module.scss
 │   │   │   ├── Footer.tsx
 │   │   │   └── index.ts
-│   │   ├── InstallButton/
-│   │   │   ├── InstallButton.tsx
-│   │   │   ├── InstallButton.module.scss
-│   │   │   └── index.tsx
-│   │   ├── Navbar/
-│   │   │   ├── Navbar.module.scss
-│   │   │   ├── Navbar.tsx
+│   │   ├── Header/
+│   │   │   ├── Header.module.scss
+│   │   │   ├── Header.tsx
 │   │   │   └── index.ts
+│   │   ├── Listas/
+│   │   │   ├── index.ts
+│   │   │   ├── ListaCard.tsx
+│   │   │   ├── ListaRacas.module.scss
+│   │   │   └── ListaRacas.tsx
+│   │   ├── MenuHamburguer/
+│   │   │   ├── index.ts
+│   │   │   ├── MenuHamburguer.module.scss
+│   │   │   └── MenuHamburguer.tsx
+│   │   ├── Navbar/
+│   │   │   ├── index.ts
+│   │   │   ├── Navbar.module.scss
+│   │   │   └── Navbar.tsx
 │   ├── contato/
 │   │   ├── Contato.module.scss
 │   │   └── page.tsx
 │   ├── home/
 │   │   ├── Home.module.scss
 │   │   └── page.tsx
-│   ├── sobre/
-│   │   ├── Sobre.module.scss
+│   ├── infoRacas/
 │   │   └── page.tsx
+│   ├── models/
+│   │   └── Servicos.ts
+│   ├── sobre/
+│   │   ├── page.tsx
+│   │   └── Sobre.module.scss
+│   ├── store/
+│   │   ├── reducer/
+│   │   │   └──tarefa.ts
+│   │   └── index.ts
 │   ├── styles/
 │   │   └── globals.scss
-│   └── layout.tsx
+│   ├── utils/
+│   │   ├── api/
+│   │   └── dogApi.ts
+│   ├── layout.tsx
+│   │
+│   └── provider.tsx
 │
+├── docs/
+│   └──  WORKFLOW.md
 ├── public/
-│   ├── icons/
 │   ├── images/
-│   ├── manifest.json
-│   ├── sw.js
-│   ├── sw.js.map
-│   ├── workbox-e43f5367.js
-│   └── workbox-e43f5367.js.map
+│   └── manifest.json
 │
 ├── next-env.d.ts
 ├── next.config.js
@@ -116,8 +142,8 @@ estrutura-base-1/
 ### 1- Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/petzi.git
-cd petzi
+git clone https://github.com/WebDesigner279/au-miau-store.git
+cd au-miau-store
 ````
 
 ### 2- Instale as dependências:
@@ -126,13 +152,7 @@ cd petzi
 npm install
 ````
 
-### 3- Crie um arquivo .env com as chaves:
-
-````ini
-VITE_PETFINDER_API_KEY=sua_api_key
-VITE_PETFINDER_SECRET=sua_secret
-````
-### 4- Rode o projeto:
+### 3- Rode o projeto:
 
 ```bash
 npm run dev

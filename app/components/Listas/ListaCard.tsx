@@ -1,5 +1,5 @@
 import item from "@/models/Servicos";
-import PetCard from "@components/Card/Servicos";
+import PetCard from "@/components/Card/PetCards";
 
 export type Props = {
     itens: item[]

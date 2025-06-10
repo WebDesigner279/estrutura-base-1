@@ -1,5 +1,5 @@
 import "./styles/globals.scss";
-import Navbar from "@components/Navbar";
+import Header from "@/components/Header"
 import Footer from "@components/Footer";
 import Providers from "./provider";
 
@@ -32,7 +32,7 @@ export default function RootLayout({
 
       <body>
         <Providers>
-          <Navbar />
+          <Header />
           <main>{children}</main>
           <Footer />
         </Providers>

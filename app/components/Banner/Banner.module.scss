@@ -1,14 +1,28 @@
-.banner{
-    width: 100%;
-    position: relative;
-}
 
 .slogan{
     position: absolute;
     font-family: var(--font-secundary);
     color: var(--color-secondary);
-    top: 3rem;
-    left: 20rem;
+    top: 5rem;
+    left: 16rem;
+    right: 8rem;
     font-size: 3rem;
 
+    @media (max-width: 992px) {
+        font-size: var(--font-size-lg);
+        top: 4rem;
+        right: 4rem;
+        left: 10rem;
+    }
+
+    
+    @media (max-width: 768px) {
+        font-size: var(--font-size-base);
+        top: 4rem;
+        left: 30%;
+    }
+
+    @media (max-width: 320px) {
+        display: none;
+    }
 }

@@ -1,4 +1,4 @@
-import { Raca } from "@/components/Card/Racas"
+import { Raca } from "@/components/Card/RacaCards"
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit"
 
 type TarefaState = {

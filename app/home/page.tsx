@@ -1,6 +1,6 @@
 import styles from "./Home.module.scss";
 
-import Banner from "@components/Banner";
+import Banner from "@/components/Banner/Banner";
 import Servico from "@/models/Servicos";
 import Listas from "@/components/Listas/ListaCard";
 
@@ -38,6 +38,7 @@ const servicos: Servico[] = [
 ]
 
 export default function Home() {
+
 	return (
     <>
       <Banner />

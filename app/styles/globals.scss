@@ -33,6 +33,7 @@ body {
   background-color: var(--color-bg);
   color: var(--text-color);
   height: 100%;
+  min-width: 320px;
 }
 
 /* Garante layout de altura completa */
@@ -40,7 +41,8 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-size: var(--font-size-base)
+  font-size: var(--font-size-base);
+  overflow-x: hidden;
 }
 
 /* Deixa o conteúdo crescer e empurrar o Footer */
@@ -57,6 +59,8 @@ a {
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .lista{
@@ -64,7 +68,18 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
-  padding: 0;
+  padding-top: 30px;
+  gap: 8px;
+
+  
+  @media (max-width: 992px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+  }
+
 }
 
 .container {
@@ -77,6 +92,7 @@ a {
   color: var(--color-secondary);
   font-size: var(--font-size-lg);
   text-align: center;
+  margin: 1rem 0;
 }
 
 .botao{
