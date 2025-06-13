@@ -13,7 +13,9 @@ export default function Listas ({itens} : Props) {
                 key={servico.id}
                 imagem={servico.imagem}
                 titulo={servico.titulo}
-                paragrafo={servico.paragrafo}
+                categoria={servico.categoria}
+                descricao={servico.descricao}
+                preco={servico.preco}
                 />
             ))}    
         </ul>

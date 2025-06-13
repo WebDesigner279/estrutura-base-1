@@ -1,20 +1,26 @@
 class Servico {
     titulo: string
-    paragrafo:string
     imagem:string
     id:number
+    categoria?: string 
+    descricao: string 
+    preco?: string 
 
     constructor(
         titulo: string,
-        paragrafo:string,
+        descricao:string,
         imagem:string,
-        id:number
+        id:number,
+        categoria: string,
+        preco: string
 
     ){
         this.titulo = titulo
-        this.paragrafo = paragrafo
+        this.descricao = descricao
         this.imagem = imagem
         this.id = id
+        this.categoria = categoria
+        this.preco = preco
     }
 }
 

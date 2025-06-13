@@ -2,16 +2,6 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
-<<<<<<< Updated upstream:app/components/Listas/ListaRacas/index.tsx
-import { useGetRacasQuery }  from "@/utils/api/dogApi";
-import { carregaRacas } from "@store/reducer/tarefa";
-import RacaCard from "@components/Card/Racas";
-import style from "./ListaRacas.module.scss";
-import { RootReducer } from "@/store";
-
-export default function ListasRacas( ) {   
-    const [listaRacas, setListaRacas] = useState<any[]>([]);
-=======
 import style from "./ListaRacas.module.scss";
 import { useGetRacasQuery }  from "@/utils/api/dogApi";
 import { carregaRacas } from "@store/reducer/tarefa";
@@ -19,7 +9,6 @@ import RacaCard from "@/components/Card/RacaCards";
 import { RootReducer } from "@/store";
 
 export default function ListasRacas( ) {   
->>>>>>> Stashed changes:app/components/Listas/ListaRacas.tsx
     const limit = 9;
     const [page, setPage] = useState(0);
     const {data: racas, isLoading, error, isFetching} = useGetRacasQuery( { page, limit });
@@ -29,15 +18,9 @@ export default function ListasRacas( ) {
     useEffect(() => {
         if(racas) {
             dispatch(carregaRacas(racas))
-<<<<<<< Updated upstream:app/components/Listas/ListaRacas/index.tsx
             // setListaRacas(prev => [...prev, ...racas])  
         }
     }, [dispatch, racas])
-=======
-        }
-    }, [dispatch, racas])
-    
->>>>>>> Stashed changes:app/components/Listas/ListaRacas.tsx
     if (isLoading) return <h2>Buscando informações...</h2>
     if (error) return <p>Erro ao carregar as informações!</p>
 

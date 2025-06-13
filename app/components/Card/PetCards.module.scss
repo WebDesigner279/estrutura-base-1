@@ -20,8 +20,12 @@
     margin-bottom: 3rem;
     border: 1px solid rgb(189, 188, 188);
     border-radius: 8px;
-    text-align: center;
     background-color: var(--color-white);
+    padding: 0 1rem;
+
+    div{
+        text-align: center;
+    }
 
     @media (max-width: 992px) {
         width: 33vw;
@@ -35,7 +39,6 @@
 }
 
 .listaTexto{
-    padding: 1rem;
     font-size: var(--font-size-sm);
     color: var(--color-text-secondary);
     margin-bottom: 1.5rem;

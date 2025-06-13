@@ -1,24 +1,26 @@
+import Link from "next/link";
 import styles from "./PetCards.module.scss";
 
 type Props = {
     titulo: string
-    paragrafo:string
     imagem:string
+    categoria?: string
+    preco?:string
+    descricao: string
 }
 
 export default function PetCard({
     titulo,
-    paragrafo,
+    descricao,
     imagem
 } : Props) {
 	return (
             <li className={styles.listaItem}>
-                <img className={styles.imagens} src={imagem} alt={titulo} />
                 <div className={styles.listaTexto}>
+                    <img className={styles.imagens} src={imagem} alt={titulo} />
                     <h3 className={styles.titulo}>{titulo}</h3>
-                    <p>{paragrafo}</p>
                 </div>
-                <button className={styles.botao}>Ver mais</button>
+                    <p className={styles.listaTexto}>{descricao}</p>
             </li>
 	);
 }

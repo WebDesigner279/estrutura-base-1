@@ -20,6 +20,11 @@ const nextConfig = {
         source: "/info",
         destination: "/InfoRacas",
         permanent: true,
+      },
+      {
+        source: "/produtos",
+        destination: "/produtos",
+        permanent: true,
       }
     ];
   },
